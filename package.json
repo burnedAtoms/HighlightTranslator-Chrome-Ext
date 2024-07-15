@@ -1,0 +1,17 @@
+{
+  "name": "highlight-translator",
+  "version": "1.0.0",
+  "description": "Translates highlight text to a preferred language on a webpage",
+  "main": "./src/background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zenroy S. Chance",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  },
+  "dependencies": {
+    "openai": "^4.52.4"
+  }
+}

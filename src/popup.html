@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+  <title>Highlight Translator</title>
+</head>
+
+<body class="p-4 w-96 flex flex-col">
+  <main class="relative">
+    <section class="relative w-full toggle-section flex flex-row gap-3">
+      <h2>Enable highlight text tranlations</h2>
+      <label for="toggle-slider"
+        class="toggle-container flex flex-row w-12 h-6 bg-gray-500 rounded-xl items-center cursor-pointer justify-self-end ">
+        <span id="toggle-slider" class="h-5 w-5 rounded-full bg-white m-1"></span>
+      </label>
+    </section>
+    <section class="mt-8 relative w-full languages-menus flex flex-row gap-4">
+      <div id="to-language-menu" class="relative w-64 h-fit">
+        <div id="to-selected-language-container"
+          class="relative px-4 py-2 w-full bg-slate-100 shadow-sm shadow-gray-300 border-gray-600 rounded-xl focus:rounded-b-none focus:shadow-none hover:bg-slate-200 flex flex-row gap-4 hover:cursor-pointer">
+          <label id="to-selected-language" for="to-language-selector"
+            class="cursor-pointer flex flex-1 text-slate-500 text-base font-sans font-semibold tracking-wider">
+            To Language
+          </label>
+          <span id="drawer-arrow-icon" class="relative transform rotate-180 flex justify-end items-center">
+            <img src="../icons/arrow_up.svg" alt="arrow up" height="8" width="8" color="#fff">
+          </span>
+        </div>
+        <ul id="to-language-selector"
+          class="-mt-4 pt-8 px-4 hidden w-full h-full overflow-auto cursor-pointer bg-slate-200/20 rounded-b-xl"></ul>
+      </div>
+    </section>
+  </main>
+  <script type="module" src="scripts/popup.js"></script>
+</body>
+</html>

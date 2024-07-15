@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Highlight Text Translator",
+  "description": "Tranlates highlight text to a preferred language on a webpage",
+  "version": "1.0",
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": "icons/icon.webp"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "js": ["src/scripts/content.js"],
+      "matches": ["<all_urls>"],
+      "type":"module"
+    }
+  ],
+  "background": {
+    "service_worker": "src/scripts/background.js"
+  }
+}
